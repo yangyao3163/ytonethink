@@ -1,0 +1,20 @@
+<extend name="Base/base" />
+<block name="main">
+    <volist name="list" id="property">
+        <div class="container-fluid">
+            <div class="row noticeList">
+                <a href="{:U('notice/detail')}">
+                    <div class="col-xs-2">
+                        <img class="noticeImg" src="./Public/Home/static/image/1.png" />
+                        <!--<img class="noticeImg" src="{$u}" />-->
+                    </div>
+                    <div class="col-xs-10">
+                        <p class="title">{$property.title}</p>
+                        <p class="intro">经过几年的摸索,XXX小区的业主委会员已经</p>
+                        <p class="info">{$property.view}<span class="pull-right">{$property.create_time|date="Y-m-d H:i:s",###}</span> </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </volist>
+</block>
