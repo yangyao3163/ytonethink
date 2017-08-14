@@ -1470,3 +1470,549 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.001060s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002118s ]
 
+[ 2017-08-14T15:30:34+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.014672s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013290s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502695834 ) AND ( deadline = 0 OR deadline > 1502695834 ) ORDER BY `id` DESC  [ RunTime:0.001024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001244s ]
+
+[ 2017-08-14T15:30:38+08:00 ] ::1 /onethink/index.php?s=/Home/Notice/index.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013638s ]
+SQL: SELECT * FROM `onethink_document` WHERE ( `category_id` = 42 )  [ RunTime:0.000876s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.058229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001748s ]
+
+[ 2017-08-14T15:30:41+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2017-08-14T15:30:47+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+SQL: SHOW COLUMNS FROM `onethink_pro` [ RunTime:0.079932s ]
+ERR: 1146:Table 'onethink.onethink_pro' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `onethink_pro`
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 886 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 886 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 886 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 886 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 886 行.
+SQL: INSERT INTO `onethink_pro` (`create_time`,`odd`) VALUES (1502695847,'599151a7eb230') [ RunTime:0.000836s ]
+ERR: 1146:Table 'onethink.onethink_pro' doesn't exist
+ [ SQL语句 ] : INSERT INTO `onethink_pro` (`create_time`,`odd`) VALUES (1502695847,'599151a7eb230')
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000869s ]
+
+[ 2017-08-14T15:30:51+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001535s ]
+
+[ 2017-08-14T15:31:48+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-08-14T15:52:18+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2017-08-14T15:52:18+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2017-08-14T15:52:23+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+SQL: SHOW COLUMNS FROM `onethink_pro` [ RunTime:0.024536s ]
+ERR: 1146:Table 'onethink.onethink_pro' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `onethink_pro`
+NOTIC: [8] Undefined index: question D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 1125 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-08-14T15:52:25+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2017-08-14T15:52:28+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+SQL: SHOW COLUMNS FROM `onethink_pro` [ RunTime:0.012040s ]
+ERR: 1146:Table 'onethink.onethink_pro' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `onethink_pro`
+NOTIC: [8] Undefined index: question D:\phpStudy\WWW\onethink\ThinkPHP\Library\Think\Model.class.php 第 1125 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+
+[ 2017-08-14T15:52:32+08:00 ] ::1 /onethink/index.php?s=/Home/Pro/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2017-08-14T15:55:48+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.029405s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.014061s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697348 ) AND ( deadline = 0 OR deadline > 1502697348 ) ORDER BY `id` DESC  [ RunTime:0.014207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-08-14T15:55:49+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.011863s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013795s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697349 ) AND ( deadline = 0 OR deadline > 1502697349 ) ORDER BY `id` DESC  [ RunTime:0.001681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2017-08-14T15:55:52+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.014427s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012852s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697352 ) AND ( deadline = 0 OR deadline > 1502697352 ) ORDER BY `id` DESC  [ RunTime:0.000858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2017-08-14T15:55:54+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.011875s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.011842s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697354 ) AND ( deadline = 0 OR deadline > 1502697354 ) ORDER BY `id` DESC  [ RunTime:0.000939s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2017-08-14T15:56:21+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.013202s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012345s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697381 ) AND ( deadline = 0 OR deadline > 1502697381 ) ORDER BY `id` DESC  [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2017-08-14T15:56:22+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+ERR: 模板不存在:./Application/Home/View/default/Property/edit1.html
+
+[ 2017-08-14T15:56:36+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.012314s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012982s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697396 ) AND ( deadline = 0 OR deadline > 1502697396 ) ORDER BY `id` DESC  [ RunTime:0.001100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2017-08-14T15:56:38+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2017-08-14T15:56:57+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.011201s ]
+SQL: INSERT INTO `onethink_property` (`name`,`tel`,`address`,`problem`,`create_time`) VALUES ('测试12','18228123122','333','333',1502697416) [ RunTime:0.000735s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Use of undefined constant UID - assumed 'UID' D:\phpStudy\WWW\onethink\Application\Home\Controller\PropertyController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.090059s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_property' ) LIMIT 1   [ RunTime:0.024415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2017-08-14T15:56:58+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.013621s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013572s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697418 ) AND ( deadline = 0 OR deadline > 1502697418 ) ORDER BY `id` DESC  [ RunTime:0.016247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2017-08-14T15:57:38+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.014381s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.014010s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697458 ) AND ( deadline = 0 OR deadline > 1502697458 ) ORDER BY `id` DESC  [ RunTime:0.000951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2017-08-14T15:57:40+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001198s ]
+
+[ 2017-08-14T15:57:51+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.011131s ]
+SQL: INSERT INTO `onethink_property` (`name`,`tel`,`address`,`problem`,`create_time`,`status`,`number`) VALUES ('再次测试','18228123122','2222','2222',1502697471,1,'one_599157ff701ff') [ RunTime:0.000762s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015419s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+NOTIC: [8] Use of undefined constant UID - assumed 'UID' D:\phpStudy\WWW\onethink\Application\Home\Controller\PropertyController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.011812s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_property' ) LIMIT 1   [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2017-08-14T15:57:52+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.013705s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.012522s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697472 ) AND ( deadline = 0 OR deadline > 1502697472 ) ORDER BY `id` DESC  [ RunTime:0.001013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2017-08-14T15:58:13+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.012195s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.013470s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697493 ) AND ( deadline = 0 OR deadline > 1502697493 ) ORDER BY `id` DESC  [ RunTime:0.001140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001658s ]
+
+[ 2017-08-14T15:58:14+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2017-08-14T15:58:22+08:00 ] ::1 /onethink/index.php?s=/Home/Property/add.html
+SQL: SHOW COLUMNS FROM `onethink_property` [ RunTime:0.011515s ]
+SQL: INSERT INTO `onethink_property` (`name`,`tel`,`address`,`problem`,`create_time`,`status`,`pid`,`number`) VALUES ('重复测试','18228123122','111','111',1502697502,1,0,'one_5991581e7178b') [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Use of undefined constant UID - assumed 'UID' D:\phpStudy\WWW\onethink\Application\Home\Controller\PropertyController.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `onethink_action` [ RunTime:0.011663s ]
+SQL: SELECT * FROM `onethink_action` WHERE ( `name` = 'update_property' ) LIMIT 1   [ RunTime:0.000721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001414s ]
+
+[ 2017-08-14T15:58:23+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.011827s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.011226s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697503 ) AND ( deadline = 0 OR deadline > 1502697503 ) ORDER BY `id` DESC  [ RunTime:0.000845s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2017-08-14T15:58:29+08:00 ] ::1 /onethink/index.php?s=/Home/Notice/index.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.011147s ]
+SQL: SELECT * FROM `onethink_document` WHERE ( `category_id` = 42 )  [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2017-08-14T15:58:33+08:00 ] ::1 /onethink/index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `onethink_category` [ RunTime:0.011923s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `onethink_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.011274s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `onethink_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1502697513 ) AND ( deadline = 0 OR deadline > 1502697513 ) ORDER BY `id` DESC  [ RunTime:0.000842s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2017-08-14T15:58:35+08:00 ] ::1 /onethink/index.php?s=/Home/Notice/index.html
+SQL: SHOW COLUMNS FROM `onethink_document` [ RunTime:0.016004s ]
+SQL: SELECT * FROM `onethink_document` WHERE ( `category_id` = 42 )  [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+NOTIC: [8] Undefined variable: u D:\phpStudy\WWW\onethink\Runtime\Cache\Home\be6b04a17f61b3e2f45d45d643559aea.php 第 37 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+

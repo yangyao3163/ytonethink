@@ -64,7 +64,7 @@
         </div>
         <div class="form-group">
             <label>问题(详细描述需要报修的问题):</label>
-            <textarea type="text" class="form-control" name="question"></textarea>
+            <textarea type="text" class="form-control" name="problem"></textarea>
         </div>
         <div class="form-group">
             <label>排序</label>
