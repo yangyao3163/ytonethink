@@ -42,7 +42,7 @@ class PropertyController extends HomeController
             $this->assign('pid', $pid);
             $this->assign('info',null);
             $this->meta_title = '新增报修';
-            $this->display('online');
+            $this->display('index');
         }
     }
 

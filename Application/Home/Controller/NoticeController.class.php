@@ -14,6 +14,6 @@ class NoticeController extends HomeController
         $list = M('Document')->where($map)->select();
        // var_dump($list);exit;
         $this->assign('list', $list);
-        $this->display('notice');
+        $this->display('index');
     }
 }
